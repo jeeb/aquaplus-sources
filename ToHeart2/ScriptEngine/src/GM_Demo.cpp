@@ -199,7 +199,7 @@ BOOL DEM_SystemMain(void )
 	char		*str = "<Aアクセント>が出せます。\n\\k<s6一次停止、<w30><s4スピード変更>とか>\\k表示中の演出挿入";
 	static int	mh;
 	int			Angle = 0;
-	static		an=0;
+	static int	an=0;
 	int			count = DemoCounter[1]*4;
 	int			mx,my;
 	MUS_GetMousePos( &mx, &my );

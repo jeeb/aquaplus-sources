@@ -4016,12 +4016,12 @@ int AVG_ControlMapEvent( void )
 	int		x1=0,x2=0;
 	int		y1=0,y2=0;
 
-	static	scnt=0;
+	static int scnt=0;
 
-	int		select = MUS_GetMouseNo(-1);
-	static	select_back=0;
-	static	select_chr;
-	static	mleyer;
+	int        select = MUS_GetMouseNo(-1);
+	static int select_back=0;
+	static int select_chr;
+	static int mleyer;
 	
 	int		CharErr[15];
 	int		PosErr[22];

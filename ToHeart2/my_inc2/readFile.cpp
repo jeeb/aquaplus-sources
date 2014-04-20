@@ -375,8 +375,9 @@ int ClReadFile::SearchFile(int arcFileNum, LPCSTR decFile,BOOL errCheck)
 } 
 
 int ClReadFile::SequentialSearchFile(int arcFileNum, LPCSTR decFile)
-{	
-	for(int i=0;i<ArcFile[arcFileNum].fileCount;i++){
+{
+    int i = 0;
+	for(;i<ArcFile[arcFileNum].fileCount;i++){
 		if(_stricmp(ArcFile[arcFileNum].pack_file[i].fname,decFile) == 0)break;
 	}
 	if(i==ArcFile[arcFileNum].fileCount){	

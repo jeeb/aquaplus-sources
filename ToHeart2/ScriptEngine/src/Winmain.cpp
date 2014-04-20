@@ -37,8 +37,8 @@ WINDOW_STRUCT	MainWindow;
 
 APP_STRUCT	AppStruct;
 
-static BOOL WIN_CreateVram( int direct_draw, int draw_mode );
-static NotInitDirectDraw=0;
+static     BOOL WIN_CreateVram( int direct_draw, int draw_mode );
+static int NotInitDirectDraw=0;
 
 CRITICAL_SECTION	MainCriticalSection;	
 
